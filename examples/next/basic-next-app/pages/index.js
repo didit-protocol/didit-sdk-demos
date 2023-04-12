@@ -13,7 +13,7 @@ export default function Home() {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        minHeight: '100vh',
+        minHeight: '96vh',
         padding: '2rem',
         boxSizing: 'border-box',
       }}

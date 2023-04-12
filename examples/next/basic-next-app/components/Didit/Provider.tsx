@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getDefaultWallets, DiditAuthProvider, darkTheme } from 'diditsdktest';
+import { getDefaultWallets, DiditAuthProvider, lightTheme } from 'diditsdktest';
 import { DiditProvider } from 'diditprovidertest';
 
 import { configureChains, createClient, WagmiConfig } from 'wagmi';
@@ -45,7 +45,7 @@ const DiditProviderComponent = ({ children }) => {
             <DiditAuthProvider
               chains={chains}
               modalSize="compact"
-              theme={darkTheme({
+              theme={lightTheme({
                 accentColor: 'linear-gradient(30deg, #0E8AAA -20%, #FF4ECD -10%, #0072F5 90%)',
                 accentColorForeground: 'white',
                 borderRadius: 'large',
