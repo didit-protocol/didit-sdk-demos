@@ -41,7 +41,7 @@ const DiditProviderComponent = ({ children }) => {
             client_id='/api'
             scopes='openid'
             claims='read:name write:name read:username write:username read:email write:email read:phone write:phone read:country write:country read:picture write:picture' 
-            children={undefined}>
+            >
             <DiditAuthProvider
               chains={chains}
               modalSize="compact"
@@ -51,7 +51,7 @@ const DiditProviderComponent = ({ children }) => {
                 borderRadius: 'large',
                 fontStack: "system",
                 overlayBlur: 'large',
-              })} children={undefined}>
+              })}>
               {children}
             </DiditAuthProvider>
           </DiditProvider>

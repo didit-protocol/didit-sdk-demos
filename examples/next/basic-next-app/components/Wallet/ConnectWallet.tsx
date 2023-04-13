@@ -4,7 +4,7 @@ import { ConnectButton } from 'diditsdktest';
 
 const ConnectWalletButton = () => {
   return (
-    <DiditProviderComponent children={undefined}>
+    <DiditProviderComponent>
         <div
         style={{
             display: 'flex',
