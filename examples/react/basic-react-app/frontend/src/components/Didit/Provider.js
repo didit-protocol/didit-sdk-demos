@@ -38,9 +38,7 @@ const DiditProviderComponent = ({ children }) => {
       <div>
         <WagmiConfig client={wagmiClient}>
           <DiditProvider
-            client_id='http://localhost:3001'
-            scopes='openid'
-            claims='read:name write:name read:username write:username read:email write:email read:phone write:phone read:country write:country read:picture write:picture' 
+            client_url='http://localhost:3001'
             children={undefined}>
             <DiditAuthProvider
               chains={chains}
