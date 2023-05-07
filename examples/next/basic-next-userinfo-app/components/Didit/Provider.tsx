@@ -4,13 +4,13 @@ import { getDefaultWallets, DiditAuthProvider, lightTheme } from "diditsdktest";
 import { DiditProvider } from "diditprovidertest";
 
 import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { mainnet, polygon, optimism, arbitrum, goerli } from "wagmi/chains";
+import { mainnet } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
 import "diditsdktest/styles.css";
 
 const { chains, provider, webSocketProvider } = configureChains(
-  [mainnet, polygon, optimism, arbitrum, goerli],
+  [mainnet],
   [publicProvider()]
 );
 
