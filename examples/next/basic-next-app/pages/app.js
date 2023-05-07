@@ -1,17 +1,23 @@
-import dynamic from 'next/dynamic';
+import "@/styles/globals.css";
+import type { AppProps } from "next/app";
+import dynamic from "next/dynamic";
 
-const DynamicDiditProviderComponent = dynamic(() => import('../components/Didit/Provider').then(mod => mod.DiditProviderComponent), { ssr: false });
+const DynamicDiditProviderComponent = dynamic(
+  () =>
+    import("../components/Didit/Provider").then(
+      (mod) => mod.DiditProviderComponent
+    ),
+  { ssr: false }
+);
 
-function MyApp({ Component, pageProps }) {
-    return (
+export default function App({ Component, pageProps }: AppProps) {
+  return (
     <main>
-        <div>
+      <div>
         <DynamicDiditProviderComponent>
-            <Component {...pageProps} />
+          <Component {...pageProps} />
         </DynamicDiditProviderComponent>
-        </div>
+      </div>
     </main>
-    );
+  );
 }
-
-export default MyApp;
