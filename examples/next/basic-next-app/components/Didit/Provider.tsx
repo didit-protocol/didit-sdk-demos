@@ -35,7 +35,7 @@ const DiditProviderComponent = ({
     <main>
       <div>
         <WagmiConfig client={wagmiClient}>
-          <DiditProvider client_url="/api">
+          <DiditProvider clientUrl="/api">
             <DiditAuthProvider
               chains={chains}
               modalSize="compact"
