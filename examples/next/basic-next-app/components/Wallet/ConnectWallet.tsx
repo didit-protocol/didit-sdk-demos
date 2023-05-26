@@ -1,23 +1,23 @@
-import React from 'react';
-import { DiditProviderComponent } from '../Didit/Provider';
-import { ConnectButton } from 'diditsdktest';
+import React from "react";
+import { DiditProviderComponent } from "../Didit/Provider";
+import { ConnectButton } from "didit-sdk";
 
 const ConnectWalletButton = () => {
   return (
     <DiditProviderComponent>
-        <div
+      <div
         style={{
-            display: 'flex',
-            justifyContent: 'flex-end',
-            padding: 12,
+          display: "flex",
+          justifyContent: "flex-end",
+          padding: 12,
         }}
-        >
+      >
         <ConnectButton
-            label="Connect with Didit"
-            accountStatus="address"
-            chainStatus="full"
+          label="Connect with Didit"
+          accountStatus="address"
+          chainStatus="full"
         />
-        </div>
+      </div>
     </DiditProviderComponent>
   );
 };

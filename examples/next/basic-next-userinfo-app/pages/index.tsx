@@ -3,7 +3,7 @@ import {
   useDiditStatus,
   useConnectModal,
   useAuthenticationAdapter,
-} from "diditsdktest";
+} from "didit-sdk";
 import { disconnect } from "@wagmi/core";
 
 const Home = () => {

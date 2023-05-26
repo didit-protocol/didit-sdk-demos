@@ -1,12 +1,12 @@
-import React from 'react';
-import { ConnectButton } from 'diditsdktest';
+import React from "react";
+import { ConnectButton } from "didit-sdk";
 
 const ConnectWalletButton = () => {
   return (
     <div
       style={{
-        display: 'flex',
-        justifyContent: 'flex-end',
+        display: "flex",
+        justifyContent: "flex-end",
         padding: 12,
       }}
     >

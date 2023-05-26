@@ -1,13 +1,13 @@
 import React from "react";
 
-import { getDefaultWallets, DiditAuthProvider, lightTheme } from "diditsdktest";
-import { DiditProvider } from "diditprovidertest";
+import { getDefaultWallets, DiditAuthProvider, lightTheme } from "didit-sdk";
+import { DiditProvider } from "didit-provider";
 
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { mainnet, polygon, optimism, arbitrum, goerli } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
-import "diditsdktest/styles.css";
+import "didit-sdk/styles.css";
 
 const { chains, provider, webSocketProvider } = configureChains(
   [mainnet, polygon, optimism, arbitrum, goerli],
