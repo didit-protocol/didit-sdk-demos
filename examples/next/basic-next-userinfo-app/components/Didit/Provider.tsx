@@ -9,6 +9,9 @@ import { publicProvider } from "wagmi/providers/public";
 
 import "didit-sdk/styles.css";
 
+// Didit Walletconnect Project Id
+const projectId = "bb8c5c3d25e7f8c2bdee64feaafb93d2";
+
 const { chains, provider, webSocketProvider } = configureChains(
   [mainnet],
   [publicProvider()]
@@ -16,6 +19,7 @@ const { chains, provider, webSocketProvider } = configureChains(
 
 const { connectors } = getDefaultWallets({
   appName: "Didit demo",
+  projectId,
   chains,
 });
 
